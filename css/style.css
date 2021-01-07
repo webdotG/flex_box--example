@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+}
+
+section {
+    margin: 25px;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+/* FLEX CONTAINER EXAMPLE */
+
+.parent--1-1 {
+    display: flex; /*родитель flex container, а дети flex element*/
+}
+
+.parent--1-2 {
+    display: flex;
+    /*flex-direction: row; /*(default): left to right in ltr; right to left in rtl*/
+    /*flex-direction: row-reverse;  /*right to left in ltr; left to right in rtl*/
+    flex-direction: column; /*same as row but top to bottom*/
+    /*flex-direction: column-reverse;  /*same as row-reverse but bottom to top*/
+}
+
+.parent--1-3 {
+    width: 500px;
+    display: flex;
+    /*flex-wrap: nowrap; /*(default): all flex items will be on one line */
+    flex-wrap: wrap; /*flex items will wrap onto multiple lines, from top to bottom*/
+    /*flex-wrap: wrap-reverse;   /*wrap-reverse: flex items will wrap onto multiple lines from bottom to top.*/
+}
+
+.child--1-3 {
+    width: 300px;
+}
+
+.child--2-3 {
+    width: 100px;
+}
+
+.child--3-3 {
+    width: 250px;
+}
+
+.child--4-3 {
+    width: 150px;
+}
+
+.parent--1-4 {
+    display: flex;
+    /*justify-content: flex-start;  /*(default): items are packed toward the start of the flex-direction.*/
+    /*justify-content: flex-end;  /*items are packed toward the end of the flex-direction.*/
+    /*justify-content: center;  /*items are centered along the line */
+    /*justify-content: space-between;  /*items are evenly distributed in the line; first item is on the start line, last item on the end line */
+    /*justify-content: space-around;  /*items are evenly distributed in the line with equal space around them. Note that visually the spaces aren’t equal, since all the items have equal space on both sides. The first item will have one unit of space against the container edge, but two units of space between the next item because that next item has its own spacing that applies. */
+    justify-content: space-evenly; /*items are distributed so that the spacing between any two items (and the space to the edges) is equal.*/
+}
+
+.child--1-4 {
+    width: 250px;
+}
+
+.child--2-4 {
+    width: 100px;
+}
+
+.child--3-4 {
+    width: 350px;
+}
+
+.child--4-4 {
+    width: 50px;
+}
+
+.parent--1-5 {
+    height: 300px;
+    display: flex;
+    /*align-items: stretch; /*(default): stretch to fill the container (still respect min-width/max-width)*/
+    /*align-items: flex-start;  /*items are placed at the start of the cross axis.*/
+    /*align-items: flex-end;  /*items are placed at the end of the cross axis.*/
+    align-items: center;  /*items are centered in the cross-axis*/
+    /*align-items: baseline;  /*items are aligned such as their baselines align*/
+}
+
+.child--1-5 {
+    height: 50px;
+}
+
+.child--2-5 {
+    height: 250px;
+}
+
+.child--3-5 {
+    height: 100px;
+}
+
+.child--4-5 {
+    height: 150px;
+}
+
+.parent--1-6{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    /*align-content: This property only takes effect on multi-line flexible containers, where flex-flow is set to either wrap or wrap-reverse). A single-line flexible container (i.e. where flex-flow is set to its default value, no-wrap) will not reflect align-content.*/
+    /*align-content: normal;  /*(default): items are packed in their default position as if no value was set.*/
+    /*align-content: flex-start;  /*items packed to the start of the container.*/
+    /*align-content: flex-end;  /*items packed to the end of the container. */
+    /*align-content: center;  /* items centered in the container*/
+    /*align-content: space-between;  /*items evenly distributed; the first line is at the start of the container while the last one is at the end*/
+    align-content: space-around;  /*items evenly distributed with equal space around each line*/
+    /*align-content: space-evenly;  /*items are evenly distributed with equal space around them*/
+    /*align-content: stretch;  /*lines stretch to take up the remaining space*/
+}
+
+.child--1-6{
+    width: 50px;
+}
+.child--2-6{
+    width: 200px;
+}
+.child--3-6{
+    width: 100px;
+}
+.child--4-6{
+    width: 75px;
+}
+.child--5-6{
+    width: 125px;
+}
+.child--6-6{
+    width: 400px;
+}
+.child--7-6{
+    width: 250px;
+}
+.child--8-6{
+    width: 100px;
+}
+.child--9-6{
+    width: 350px;
+}
+.child--10-6{
+    width: 50px;
+}
+
+.flex-wrapper1{
+    background-color: gray;
+}
+.flex-wrapper1-1{
+    background-color: coral;
+}
+.flex-wrapper1-2{
+    background-color: pink;
+}
+
+.flex-wrapper1-3{
+    background-color: blueviolet;
+}
+.flex-wrapper1-4{
+    background-color: antiquewhite;
+}
+.flex-wrapper1-5{
+    background-color: aquamarine;
+}
+.flex-wrapper1-6{
+    background-color: cornflowerblue;
+}
