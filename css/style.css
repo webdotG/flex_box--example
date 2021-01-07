@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: sans-serif;
 }
 
 section {
@@ -19,6 +20,9 @@ li {
     margin: 10px;
 }
 
+h1{
+    text-align: center;
+}
 /* FLEX CONTAINER EXAMPLE */
 
 .parent--1-1 {
