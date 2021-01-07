@@ -58,6 +58,7 @@ li {
 }
 
 .parent--1-4 {
+    width: 1200px;
     display: flex;
     /*justify-content: flex-start;  /*(default): items are packed toward the start of the flex-direction.*/
     /*justify-content: flex-end;  /*items are packed toward the end of the flex-direction.*/
