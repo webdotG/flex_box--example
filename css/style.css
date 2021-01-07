@@ -11,6 +11,7 @@ ul {
     padding: 0;
     margin: 0;
     list-style: none;
+    border: 2px black dotted;
 }
 
 li {
@@ -20,9 +21,10 @@ li {
     margin: 10px;
 }
 
-h1{
+h1 {
     text-align: center;
 }
+
 /* FLEX CONTAINER EXAMPLE */
 
 .parent--1-1 {
@@ -94,7 +96,7 @@ h1{
     /*align-items: stretch; /*(default): stretch to fill the container (still respect min-width/max-width)*/
     /*align-items: flex-start;  /*items are placed at the start of the cross axis.*/
     /*align-items: flex-end;  /*items are placed at the end of the cross axis.*/
-    align-items: center;  /*items are centered in the cross-axis*/
+    align-items: center; /*items are centered in the cross-axis*/
     /*align-items: baseline;  /*items are aligned such as their baselines align*/
 }
 
@@ -114,7 +116,7 @@ h1{
     height: 150px;
 }
 
-.parent--1-6{
+.parent--1-6 {
     width: 600px;
     height: 600px;
     display: flex;
@@ -125,61 +127,183 @@ h1{
     /*align-content: flex-end;  /*items packed to the end of the container. */
     /*align-content: center;  /* items centered in the container*/
     /*align-content: space-between;  /*items evenly distributed; the first line is at the start of the container while the last one is at the end*/
-    align-content: space-around;  /*items evenly distributed with equal space around each line*/
+    align-content: space-around; /*items evenly distributed with equal space around each line*/
     /*align-content: space-evenly;  /*items are evenly distributed with equal space around them*/
     /*align-content: stretch;  /*lines stretch to take up the remaining space*/
 }
 
-.child--1-6{
-    width: 50px;
-}
-.child--2-6{
-    width: 200px;
-}
-.child--3-6{
-    width: 100px;
-}
-.child--4-6{
-    width: 75px;
-}
-.child--5-6{
-    width: 125px;
-}
-.child--6-6{
-    width: 400px;
-}
-.child--7-6{
-    width: 250px;
-}
-.child--8-6{
-    width: 100px;
-}
-.child--9-6{
-    width: 350px;
-}
-.child--10-6{
+.child--1-6 {
     width: 50px;
 }
 
-.flex-wrapper1{
+.child--2-6 {
+    width: 200px;
+}
+
+.child--3-6 {
+    width: 100px;
+}
+
+.child--4-6 {
+    width: 75px;
+}
+
+.child--5-6 {
+    width: 125px;
+}
+
+.child--6-6 {
+    width: 400px;
+}
+
+.child--7-6 {
+    width: 250px;
+}
+
+.child--8-6 {
+    width: 100px;
+}
+
+.child--9-6 {
+    width: 350px;
+}
+
+.child--10-6 {
+    width: 50px;
+}
+
+.flex-wrapper1 {
     background-color: gray;
 }
-.flex-wrapper1-1{
+
+.flex-wrapper1-1 {
     background-color: coral;
 }
-.flex-wrapper1-2{
+
+.flex-wrapper1-2 {
     background-color: pink;
 }
 
-.flex-wrapper1-3{
+.flex-wrapper1-3 {
     background-color: blueviolet;
 }
-.flex-wrapper1-4{
+
+.flex-wrapper1-4 {
     background-color: antiquewhite;
 }
-.flex-wrapper1-5{
+
+.flex-wrapper1-5 {
     background-color: aquamarine;
 }
-.flex-wrapper1-6{
+
+.flex-wrapper1-6 {
     background-color: cornflowerblue;
+}
+
+/*FLEX ELEMENTS*/
+
+.flex-wrapper1-7{
+    background-color: bisque;
+}
+
+.parent--1-7 {
+    display: flex;
+}
+.child--5-7 {
+    order: -1;
+}
+.child--1-7 {
+    order: 3;
+}
+.child--3-7 {
+    order: 5;
+}
+.child--6-7 {
+    order: 2;
+}
+.child--7-7{
+    order: 1;
+}
+
+.flex-wrapper1-8{
+    background-color: darksalmon;
+}
+.parent--1-8{
+    display: flex;
+}
+.child--1-8{
+    flex-grow: 1;
+}
+
+.parent--2-8{
+    display: flex;
+}
+.child--12-8{
+    flex-grow: 1;
+}
+.child--32-8{
+    flex-grow: 2;
+}
+
+.parent--3-8{
+    display: flex;
+}
+.parent--3-8 li{
+    width: 50px;
+}
+.child--13-8{
+    flex-grow: 1;
+}
+.child--33-8{
+    flex-grow: 3;
+}
+.child--53-8{
+    flex-grow: 10;
+}
+
+.flex-wrapper1-9{
+    background-color: lightpink;
+}
+
+.parent--1-9{
+    width: 1000px;
+    display: flex;
+}
+.parent--1-9 li{
+    width: 400px;
+}
+.child--1-9{
+    flex-shrink: 2;
+}
+.child--4-9{
+    flex-shrink: 3;
+}
+
+.flex-wrapper1-10{
+    background-color: fuchsia;
+}
+.parent--1-10{
+    display: flex;
+}
+.child--1-10{
+    flex-basis: 25%;
+}
+.child--3-10{
+    flex-basis: 50%;
+}
+
+.flex-wrapper1-11{
+    background-color: aquamarine;
+}
+.parent--1-11{
+    height: 300px;
+    display: flex;
+    align-items: center;
+
+}
+.child--1-11{
+    align-self: flex-end;
+}
+.child--3-11{
+    align-self: flex-start;
 }
